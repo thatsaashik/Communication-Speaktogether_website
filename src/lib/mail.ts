@@ -261,7 +261,7 @@ export function getLearnerConfirmationHtml(payload: MailPayload): string {
                 </table>
 
                 <!-- Feature 3 -->
-                <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #f8fafc; border-radius: 12px; border: 1px solid #edf2f7;">
+                <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #f8fafc; border-radius: 12px; border: 1px solid #edf2f7; margin-bottom: 10px;">
                   <tr>
                     <td width="48" style="padding: 14px 0 14px 16px; vertical-align: top; font-size: 24px;">
                       💡
@@ -269,6 +269,19 @@ export function getLearnerConfirmationHtml(payload: MailPayload): string {
                     <td style="padding: 14px 16px 14px 8px; vertical-align: middle;">
                       <div style="font-size: 14px; font-weight: 700; color: #0f172a; margin-bottom: 3px;">Smart Live Prompts</div>
                       <div style="font-size: 13px; color: #64748b; line-height: 1.45;">Never experience awkward silence. Enjoy guided topics, daily scenarios, and instant vocabulary hints.</div>
+                    </td>
+                  </tr>
+                </table>
+
+                <!-- Mobile App Play Store Coming Soon Banner -->
+                <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #eef2ff; border-radius: 12px; border: 1.5px solid #c7d2fe;">
+                  <tr>
+                    <td width="48" style="padding: 14px 0 14px 16px; vertical-align: top; font-size: 24px;">
+                      📱
+                    </td>
+                    <td style="padding: 14px 16px 14px 8px; vertical-align: middle;">
+                      <div style="font-size: 14px; font-weight: 700; color: #3730a3; margin-bottom: 3px;">Google Play Android App — Coming Soon!</div>
+                      <div style="font-size: 13px; color: #4338ca; line-height: 1.45;">You will receive priority access when our Android app launches on Google Play. <strong>100% Free • No Subscriptions!</strong></div>
                     </td>
                   </tr>
                 </table>

@@ -4,6 +4,7 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Youtube, Instagram, Twitter, Linkedin, Heart } from "lucide-react";
+import PlayStoreBadge from "./PlayStoreBadge";
 
 export default function Footer() {
   return (
@@ -52,14 +53,39 @@ export default function Footer() {
                 color: "#94a3b8",
                 lineHeight: 1.6,
                 maxWidth: "320px",
-                marginBottom: "20px",
+                marginBottom: "16px",
               }}
             >
               A friendly, supportive community to build confidence in spoken English.
               Practice with real learners anywhere, anytime.
             </p>
-            <div style={{ fontSize: "12.5px", color: "#64748b" }}>
+            <div style={{ fontSize: "12.5px", color: "#64748b", marginBottom: "18px" }}>
               Practice • Connect • Grow
+            </div>
+
+            {/* Play Store Mobile App Badge */}
+            <div>
+              <div
+                style={{
+                  fontSize: "11px",
+                  fontWeight: 700,
+                  color: "#94a3b8",
+                  textTransform: "uppercase",
+                  letterSpacing: "0.06em",
+                  marginBottom: "8px",
+                }}
+              >
+                Mobile App
+              </div>
+              <PlayStoreBadge
+                size="sm"
+                variant="dark"
+                showFreeTag={true}
+                onClick={() => {
+                  const el = document.getElementById("mobile-app");
+                  if (el) el.scrollIntoView({ behavior: "smooth" });
+                }}
+              />
             </div>
           </div>
 
@@ -82,6 +108,7 @@ export default function Footer() {
                 { label: "Home", href: "#top" },
                 { label: "Practice", href: "#practice" },
                 { label: "Learn", href: "#learn" },
+                { label: "Mobile App (Soon)", href: "#mobile-app" },
                 { label: "Community", href: "#topics" },
                 { label: "About", href: "#how-it-works" },
               ].map((link) => (

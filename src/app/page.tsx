@@ -8,6 +8,7 @@ import HowItWorks from "@/components/HowItWorks";
 import LanguageBridge from "@/components/LanguageBridge";
 import TopicsGrid from "@/components/TopicsGrid";
 import Testimonials from "@/components/Testimonials";
+import MobileAppSection from "@/components/MobileAppSection";
 import EarlyAccessModal from "@/components/EarlyAccessModal";
 import Footer from "@/components/Footer";
 import { ArrowRight, Sparkles, MessageSquare } from "lucide-react";
@@ -33,6 +34,9 @@ export default function HomePage() {
 
         {/* Language Bridge & Real-Time Prompt Helper */}
         <LanguageBridge />
+
+        {/* Mobile App Coming Soon Section */}
+        <MobileAppSection onOpenEarlyAccess={() => setIsEarlyAccessOpen(true)} />
 
         {/* Popular Conversation Topics */}
         <TopicsGrid />
@@ -150,7 +154,7 @@ export default function HomePage() {
                   </button>
 
                   <a
-                    href="https://wa.me/919999999999?text=Hi%20SpeakTogether!%20I%20want%20to%20practice%20speaking%20English."
+                    href="https://wa.me/919636852922?text=Hi%20SpeakTogether!%20I%20want%20to%20practice%20speaking%20English."
                     target="_blank"
                     rel="noopener noreferrer"
                     style={{
@@ -173,6 +177,28 @@ export default function HomePage() {
                     <MessageSquare size={16} />
                     <span>Chat on WhatsApp</span>
                   </a>
+                </div>
+
+                {/* Mobile App Coming Soon Pill inside CTA */}
+                <div
+                  style={{
+                    marginTop: "28px",
+                    display: "inline-flex",
+                    alignItems: "center",
+                    gap: "8px",
+                    background: "rgba(0, 0, 0, 0.25)",
+                    border: "1px solid rgba(255, 255, 255, 0.2)",
+                    borderRadius: "9999px",
+                    padding: "6px 16px",
+                    fontSize: "13px",
+                    color: "rgba(255, 255, 255, 0.95)",
+                    cursor: "pointer",
+                  }}
+                  onClick={() => setIsEarlyAccessOpen(true)}
+                >
+                  <span>📱 Google Play App Coming Soon</span>
+                  <span style={{ opacity: 0.7 }}>•</span>
+                  <span style={{ fontWeight: 700, color: "#a7f3d0" }}>100% Free • No Subscriptions</span>
                 </div>
               </div>
             </div>

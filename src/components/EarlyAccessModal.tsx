@@ -259,15 +259,37 @@ export default function EarlyAccessModal({ isOpen, onClose }: ModalProps) {
 
             <p
               style={{
-                fontSize: "14.5px",
+                fontSize: "14px",
                 color: "#64748b",
                 lineHeight: 1.5,
-                marginBottom: "24px",
+                marginBottom: "16px",
               }}
             >
               Enter your details below. We will send an instant confirmation to your email,
               and our team will reach out with your early-access invitation!
             </p>
+
+            {/* Mobile App Notice */}
+            <div
+              style={{
+                display: "flex",
+                alignItems: "center",
+                gap: "8px",
+                backgroundColor: "#f0fdf4",
+                border: "1px solid #bbf7d0",
+                borderRadius: "12px",
+                padding: "8px 12px",
+                marginBottom: "20px",
+                fontSize: "12.5px",
+                color: "#166534",
+                fontWeight: 600,
+              }}
+            >
+              <span>📱</span>
+              <span>
+                <strong>Google Play App Coming Soon:</strong> You will get priority beta access! (100% Free • No Subscriptions)
+              </span>
+            </div>
 
             {/* Simple Clean Form */}
             <form onSubmit={handleSubmit} noValidate>
@@ -618,8 +640,9 @@ export default function EarlyAccessModal({ isOpen, onClose }: ModalProps) {
                 <span>Our team will reach out to you shortly!</span>
               </div>
               <p style={{ fontSize: "13px", color: "#065f46", margin: 0, lineHeight: 1.45 }}>
-                Your details have been logged and dispatched to the team at{" "}
-                <strong>speaktogether713@gmail.com</strong>. We will contact you with your.
+                Your details have been logged and dispatched to our team at{" "}
+                <strong>speaktogether713@gmail.com</strong>. We will contact you with your early access pass
+                and Google Play app download notification as soon as it launches (100% Free • No Subscriptions).
               </p>
             </div>
 

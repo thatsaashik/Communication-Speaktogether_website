@@ -88,6 +88,7 @@ export default function Navbar({ onOpenEarlyAccess }: NavbarProps) {
               { label: "Home", href: "#top" },
               { label: "Practice", href: "#practice" },
               { label: "Learn", href: "#learn" },
+              { label: "Mobile App", href: "#mobile-app", badge: "Soon" },
               { label: "Community", href: "#topics" },
               { label: "About", href: "#how-it-works" },
             ].map((item) => (
@@ -100,11 +101,29 @@ export default function Navbar({ onOpenEarlyAccess }: NavbarProps) {
                   fontWeight: 600,
                   color: "#475569",
                   transition: "color 0.2s ease",
+                  display: "inline-flex",
+                  alignItems: "center",
+                  gap: "6px",
                 }}
                 onMouseEnter={(e) => ((e.currentTarget as HTMLElement).style.color = "#4f46e5")}
                 onMouseLeave={(e) => ((e.currentTarget as HTMLElement).style.color = "#475569")}
               >
-                {item.label}
+                <span>{item.label}</span>
+                {"badge" in item && (
+                  <span
+                    style={{
+                      fontSize: "10px",
+                      fontWeight: 700,
+                      backgroundColor: "#e0e7ff",
+                      color: "#4338ca",
+                      padding: "2px 6px",
+                      borderRadius: "9999px",
+                      textTransform: "uppercase",
+                    }}
+                  >
+                    {item.badge}
+                  </span>
+                )}
               </a>
             ))}
           </nav>
@@ -216,6 +235,7 @@ export default function Navbar({ onOpenEarlyAccess }: NavbarProps) {
               { label: "Home", href: "#top" },
               { label: "Practice", href: "#practice" },
               { label: "Learn", href: "#learn" },
+              { label: "📱 Mobile App (Coming Soon)", href: "#mobile-app" },
               { label: "Community", href: "#topics" },
               { label: "About", href: "#how-it-works" },
             ].map((item) => (

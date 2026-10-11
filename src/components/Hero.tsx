@@ -73,25 +73,62 @@ export default function Hero({ onOpenEarlyAccess }: HeroProps) {
               build confidence, and achieve your goals — for free!
             </p>
 
-            {/* Reassuring Shy-Friendly Pill */}
-            <div
-              style={{
-                display: "inline-flex",
-                alignItems: "center",
-                gap: "8px",
-                background: "#f0fdf4",
-                border: "1px solid #bbf7d0",
-                borderRadius: "9999px",
-                padding: "8px 18px",
-                marginBottom: "28px",
-                fontSize: "13px",
-                color: "#166534",
-                fontWeight: 600,
-                boxShadow: "0 2px 8px rgba(16, 185, 129, 0.08)",
-              }}
-            >
-              <span>🎙️</span>
-              <span><strong>Camera is 100% Optional</strong> — Practice with voice-only audio if you feel shy!</span>
+            {/* Reassuring Shy-Friendly Pill & Mobile App Pill */}
+            <div style={{ display: "flex", flexWrap: "wrap", gap: "10px", marginBottom: "26px" }}>
+              <div
+                style={{
+                  display: "inline-flex",
+                  alignItems: "center",
+                  gap: "8px",
+                  background: "#f0fdf4",
+                  border: "1px solid #bbf7d0",
+                  borderRadius: "9999px",
+                  padding: "7px 16px",
+                  fontSize: "13px",
+                  color: "#166534",
+                  fontWeight: 600,
+                  boxShadow: "0 2px 8px rgba(16, 185, 129, 0.08)",
+                }}
+              >
+                <span>🎙️</span>
+                <span><strong>Camera is 100% Optional</strong> — Voice-only audio!</span>
+              </div>
+
+              {/* Mobile App Coming Soon Play Store Pill */}
+              <a
+                href="#mobile-app"
+                style={{
+                  display: "inline-flex",
+                  alignItems: "center",
+                  gap: "8px",
+                  background: "#eef2ff",
+                  border: "1px solid #c7d2fe",
+                  borderRadius: "9999px",
+                  padding: "7px 16px",
+                  fontSize: "13px",
+                  color: "#4338ca",
+                  fontWeight: 700,
+                  textDecoration: "none",
+                  boxShadow: "0 2px 8px rgba(99, 102, 241, 0.08)",
+                  transition: "all 0.15s ease",
+                }}
+                onMouseEnter={(e) => ((e.currentTarget as HTMLElement).style.background = "#e0e7ff")}
+                onMouseLeave={(e) => ((e.currentTarget as HTMLElement).style.background = "#eef2ff")}
+              >
+                <span>📱 Google Play App Coming Soon</span>
+                <span
+                  style={{
+                    fontSize: "11px",
+                    backgroundColor: "#10b981",
+                    color: "#ffffff",
+                    padding: "2px 7px",
+                    borderRadius: "9999px",
+                    fontWeight: 700,
+                  }}
+                >
+                  100% Free • No Subscriptions
+                </span>
+              </a>
             </div>
 
             {/* CTA Buttons */}
