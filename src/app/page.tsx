@@ -154,7 +154,7 @@ export default function HomePage() {
                   </button>
 
                   <a
-                    href="https://wa.me/919636852922?text=Hi%20SpeakTogether!%20I%20want%20to%20practice%20speaking%20English."
+                    href="https://wa.me/918078659728?text=Hi%20SpeakTogether!%20I%20want%20to%20practice%20speaking%20English."
                     target="_blank"
                     rel="noopener noreferrer"
                     style={{
@@ -211,10 +211,10 @@ export default function HomePage() {
 
       {/* Floating WhatsApp Quick Action Button (Bottom Right) */}
       <a
-        href="https://wa.me/919636852922?text=Hi!%20I'm%20interested%20in%20SpeakTogether%20English%20speaking%20practice."
+        href="https://wa.me/918078659728?text=Hi!%20I'm%20interested%20in%20SpeakTogether%20English%20speaking%20practice."
         target="_blank"
         rel="noopener noreferrer"
-        aria-label="Chat on WhatsApp with +91 9636852922"
+        aria-label="Chat on WhatsApp with +91 8078659728"
         style={{
           position: "fixed",
           bottom: "24px",

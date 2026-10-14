@@ -153,9 +153,9 @@ export default function Hero({ onOpenEarlyAccess }: HeroProps) {
                 <ArrowRight size={18} />
               </button>
 
-              {/* WhatsApp Button with user number 9636852922 */}
+              {/* WhatsApp Button with user number 8078659728 */}
               <a
-                href="https://wa.me/919636852922?text=Hi!%20I'm%20interested%20in%20SpeakTogether%20English%20practice."
+                href="https://wa.me/918078659728?text=Hi!%20I'm%20interested%20in%20SpeakTogether%20English%20practice."
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{
